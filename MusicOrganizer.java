@@ -28,6 +28,12 @@ public class MusicOrganizer
         files.add(filename);
     }
     
+    public void checkIndex(int index){
+    if (!(index >= 0 && index < files.size())){
+        System.out.println("Invalid Index. Please use a value in the range 0-"+(files.size()-1));
+        }
+    }    
+
     /**
      * Return the number of files in the collection.
      * @return The number of files in the collection.
