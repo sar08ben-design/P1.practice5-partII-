@@ -34,6 +34,15 @@ public class MusicOrganizer
         }
     }    
 
+    public boolean validIndex(int index){
+    if (!(index >= 0 && index < files.size())){
+        return false;
+        }
+        else{
+        return true;
+    }
+    
+    }  
     /**
      * Return the number of files in the collection.
      * @return The number of files in the collection.
