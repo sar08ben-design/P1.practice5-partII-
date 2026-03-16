@@ -71,10 +71,15 @@ public class MusicOrganizer
 }
 
 public void listMatching(String searchString) {
+    boolean matchFound = false;
     for(String filename : files) {
         if(filename.contains(searchString)) {
             System.out.println(filename);
+            matchFound = true;   // at least one match was found
         }
+    }
+    if(!matchFound) {
+        System.out.println("No files matched: " + searchString);
     }
 }       
     
