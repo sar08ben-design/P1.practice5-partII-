@@ -58,11 +58,18 @@ public class MusicOrganizer
      */
     public void listFile(int index)
     {
-        if(index >= 0 && index < files.size()) {
-            String filename = files.get(index);
-            System.out.println(filename);
-        }
+        
+    //????????????
     }
+    
+    public void listAllFiles(){
+        int position = 0;
+        for (String filename: files){
+        System.out.println(position + ": " + filename);
+        position++;   // increment position manually each iteration
+    }
+        }
+       
     
     /**
      * Remove a file from the collection.
