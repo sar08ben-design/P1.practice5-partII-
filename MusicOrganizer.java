@@ -69,7 +69,14 @@ public class MusicOrganizer
         position++;   // increment position manually each iteration
     }
 }
-       
+
+public void listMatching(String searchString) {
+    for(String filename : files) {
+        if(filename.contains(searchString)) {
+            System.out.println(filename);
+        }
+    }
+}       
     
     /**
      * Remove a file from the collection.
